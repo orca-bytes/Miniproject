@@ -1,9 +1,8 @@
 # Miniproject
-#Data180 Group MiniProject
-#Group Mini Project
+#Jc FLetcher (ADD NAMES HERE)
 
 #Summary statistics table and data cleaning steps including: missing values (if any); transformations of the data (if required, such as normalizing or converting to factor variables); a narrative of which variables you think make sense as predictors for default
-
+#I AM PREDICTING THAT "PAY_0,1,2,3,4... PAY_6" ARE EXPECTED TO BE SIGNIFIGANT PREDICTORS FOR CLIENT RISK OF DEFAULT.
 
 library(readxl)
 mini_data = read_excel("~/Documents/INFO180/GROUP MINI PROJECT/default of credit card clients.xls", skip = 1)
@@ -18,6 +17,5 @@ mini_data$PAY_4 = factor(mini_data$PAY_4)
 mini_data$PAY_5 = factor(mini_data$PAY_5)
 mini_data$PAY_6 = factor(mini_data$PAY_6)
 
-#I AM PREDICTING THAT "PAY_0,1,2,3,4... PAY_6" ARE EXPECTED TO BE SIGNIFIGANT PREDICTORS FOR CLIENT RISK OF DEFAULT.
 
 
